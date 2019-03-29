@@ -24,5 +24,26 @@ namespace ARTemplate.Services.ArOriginPoint
       if (hitResults.Count == 0) return;
       Main.Store.arOrigin.position.Value = hitResults[0].pose.position;
     }
-  }
+/*
+        void Update()
+        {
+            RaycastHit hit;
+            var ray = Main.Store.mainCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Debug.Log("hit");
+                Main.Store.arOrigin.didHit.Value = true;
+                Transform objectHit = hit.transform;
+                Main.Store.arOrigin.position.Value = objectHit.position;
+            }
+            else
+            {
+                Debug.Log("no");
+                Main.Store.arOrigin.didHit.Value = false;
+            }
+        }
+
+    */
+    }
 }
