@@ -4,7 +4,6 @@ namespace ARTemplate
 {
   public class World : MonoBehaviour
   {
-    // Start is called before the first frame update
     void Start()
     {
       Main.Store.arOrigin.originIsSet.Bind(s => gameObject.SetActive(s));
