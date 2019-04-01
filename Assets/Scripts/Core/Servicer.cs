@@ -13,12 +13,11 @@ namespace ARTemplate
   public class Servicer
   {
     private ArOriginPointRaycaster arOriginPointRaycaster;
-    //private ArStartMark arStartMark;
+
     public Servicer()
     {
       var go = new GameObject("Services");
       arOriginPointRaycaster = go.AddComponent<ArOriginPointRaycaster>();
-      ///arStartMark = go.AddComponent<ArStartMark>();
     }
 
     public void Start()
