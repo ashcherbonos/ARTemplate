@@ -12,10 +12,7 @@ namespace ARTemplate.UI
         transform.position = s;
         gameObject.SetActive(true);
       });
-      Main.Store.arOrigin.originIsSet.LazyBind(s =>
-      {
-        if (s) gameObject.SetActive(false);
-      });
+      Main.Store.arOrigin.originIsSet.LazyBind(s => gameObject.SetActive(!s));
     }
   }
 }
