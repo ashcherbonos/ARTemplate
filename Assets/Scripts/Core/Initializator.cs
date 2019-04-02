@@ -7,9 +7,15 @@ namespace ARTemplate
   {
     public void InitScene()
     {
+      InitSession();
       InitCameraRig();
       InitEnvironment();
       InitUI();
+    }
+
+    private void InitSession()
+    {
+      Loader.Instantiate<GameObject>(AddressableNames.ARSession);
     }
 
     private void InitCameraRig()
@@ -20,7 +26,7 @@ namespace ARTemplate
 
     private void InitEnvironment()
     {
-      Loader.Instantiate<GameObject>(AddressableNames.Environment);
+      //Loader.Instantiate<GameObject>(AddressableNames.Environment);
     }
 
     private void InitUI()
