@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 namespace ARTemplate.UI
 {
@@ -7,6 +8,7 @@ namespace ARTemplate.UI
     [SerializeField] GameObject lookAraund;
     [SerializeField] GameObject tapToStart;
     [SerializeField] GameObject resetOriginPoint;
+    [SerializeField] Slider zoomSlider;
 
     void Start()
     {
@@ -30,6 +32,11 @@ namespace ARTemplate.UI
     public void OnResetClick()
     {
       Main.Store.arOrigin.originIsSet.Value = false;
+    }
+
+    public void OnZoomSliderValueChange()
+    {
+      Main.Store.arOrigin.zoom.Value = zoomSlider.value;
     }
   }
 }
