@@ -12,6 +12,10 @@ namespace ARTemplate.UI
 
     void Start()
     {
+      zoomSlider.minValue = Constants.MinArZoom;
+      zoomSlider.maxValue = Constants.MaxArZoom;
+      zoomSlider.value = Constants.DefaultArZoom;
+
       Main.Store.arOrigin.originIsSet.Bind(s =>
       {
         resetOriginPoint.SetActive(s);

@@ -566,8 +566,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -10}
-  m_SizeDelta: {x: 20, y: 160}
+  m_AnchoredPosition: {x: -10, y: -75}
+  m_SizeDelta: {x: 50, y: 160}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &8637481097474872762
 MonoBehaviour:
@@ -747,7 +747,7 @@ MonoBehaviour:
   lookAraund: {fileID: 189148318812751549}
   tapToStart: {fileID: 2324522334684108620}
   resetOriginPoint: {fileID: 138844470096497325}
-  zoomSlider: {fileID: 0}
+  zoomSlider: {fileID: 8637481097474872762}
 --- !u!1 &5056639525362062821
 GameObject:
   m_ObjectHideFlags: 0

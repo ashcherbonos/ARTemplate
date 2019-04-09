@@ -9,8 +9,9 @@ namespace ARTemplate.Services.ArOriginPoint
   {
     void Start()
     {
-      Main.Store.arOrigin.originIsSet.Bind(s => {
-          gameObject.SetActive(!s);
+      Main.Store.arOrigin.originIsSet.Bind(s =>
+      {
+        gameObject.SetActive(!s);
       });
     }
 

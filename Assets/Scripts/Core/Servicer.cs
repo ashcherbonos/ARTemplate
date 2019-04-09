@@ -18,6 +18,7 @@ namespace ARTemplate
     {
       var go = new GameObject("Services");
       arOriginPointRaycaster = go.AddComponent<ArOriginPointRaycaster>();
+      Loader.Instantiate<GameObject>(AddressableNames.ARStartMark);
     }
 
     public void Start()
