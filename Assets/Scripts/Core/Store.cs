@@ -12,13 +12,13 @@ namespace ARTemplate
   /// </summary>
   public class Store
   {
-    public ARSessionOrigin rig;
     public Camera mainCamera;
-    public ArOriginData arOrigin = new ArOriginData();
+    public ArOriginData ar = new ArOriginData();
   }
 
   public class ArOriginData
   {
+    public ARSessionOrigin session = null;
     public Box<bool> originIsSet = new Box<bool>(false);
     public Box<Vector3> position = new Box<Vector3>(Vector3.zero);
     public Box<bool> markIsVisible = new Box<bool>(false);

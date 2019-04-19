@@ -11,7 +11,7 @@ namespace ARTemplate
 
     void Start()
     {
-      Main.Store.arOrigin.originIsSet.Bind(s => visualiser.enabled = !s);
+      Main.Store.ar.originIsSet.Bind(s => visualiser.enabled = !s);
     }
   }
 }

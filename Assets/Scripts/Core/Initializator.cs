@@ -20,8 +20,8 @@ namespace ARTemplate
 
     private void InitCameraRig()
     {
-      Main.Store.rig = Loader.Instantiate<ARSessionOrigin>(AddressableNames.CameraRig);
-      Main.Store.mainCamera = Main.Store.rig.GetComponentInChildren<Camera>();
+      Main.Store.ar.session = Loader.Instantiate<ARSessionOrigin>(AddressableNames.ARSessionOrigin);
+      Main.Store.mainCamera = Main.Store.ar.session.GetComponentInChildren<Camera>();
     }
 
     private void InitEnvironment()

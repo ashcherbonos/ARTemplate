@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using ARTemplate.Services;
-using ARTemplate.Services.ArOriginPoint;
 
 namespace ARTemplate
 {
@@ -12,13 +11,12 @@ namespace ARTemplate
   /// </summary>
   public class Servicer
   {
-    private ArOriginPointRaycaster arOriginPointRaycaster;
+    private ArService arService;
 
     public Servicer()
     {
       var go = new GameObject("Services");
-      arOriginPointRaycaster = go.AddComponent<ArOriginPointRaycaster>();
-      Loader.Instantiate<GameObject>(AddressableNames.ARStartMark);
+      arService = go.AddComponent<ArService>();
     }
 
     public void Start()
